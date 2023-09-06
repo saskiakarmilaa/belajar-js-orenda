@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>declaration vs expression</title>
+</head>
+<body>
+    <script>
+        //function expression (tulis definisi dulu baru di panggil)
+        var tampilPesan = function tampilPesan(nama) {
+            alert( 'halo' + nama );
+        }
+
+        tampilPesan('saskiakarmilaa');
+
+        //function declaration (fleksibel)
+        tampilPesan('saskiakarmilaa');
+
+        function tampilPesan(nama) {
+            alert('halo' + nama);
+        }
+
+        tampilPesan('saskiakarmilaa');
+    </script>
+</body>
+</html>
