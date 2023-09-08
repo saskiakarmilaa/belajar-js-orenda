@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExecutionContext dan Hoisting&Scope</title>
+</head>
+<body>
+    <script>
+        // Execution context, hoisting & scope
+        // var nama = 'saskia';
+        // console.log(nama);
+
+        // creation phose pada global context
+        // nama var = undefined
+        // nama function = fn()
+        // hoisting
+        // window = global object
+        // this = window
+
+        // execution phase
+
+        console.log(sayHello());
+
+        var nama = 'saskia';
+        var umur = 33;
+
+        function sayHello() {
+            return`Halo, nama saya ${nama}, saya ${umur} tahun.`;
+        }
+
+        // function membuat local execution context 
+        // yang di dalamnya terdapat creation dan execution phase 
+        // window
+        // arguments
+        // hoisting
+
+        var nama = 'saskia karmila';
+        var username
+    </script>
+</body>
+</html>
