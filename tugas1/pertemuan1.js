@@ -21,6 +21,7 @@ const counter2 = (bil1=3) => {
 counter2(6)
 //es5 > kebawah
 // counter1()
+
 function counter1()  {
 
     console.log("Test call");
