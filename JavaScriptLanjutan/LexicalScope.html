@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scope</title>
+</head>
+<body>
+    <script>
+        // function init() {
+        //     // let nama = 'saskia';
+        //     function tampilanNama(nama) {
+        //         console.log(nama);
+        //     }
+        //     return tampilanNama;
+        // }
+        // let panggilNama = init();
+        // panggilNama('stella');
+
+        // function ucapkanSalam(waktu) {
+        //     return function (nama) {
+        //         console.log(`halo ${nama}, selamat ${waktu}, semoga harimu menyenangkan!`);
+        //     }
+        // }
+
+        // let selamatPagi = ucapkanSalam(`pagi`);
+        // let selamatSiang = ucapkanSalam(`siang`);        
+        // let selamatMalam = ucapkanSalam(`malam`);
+        //contoh satu
+        // console.dir(selamatMalam);
+        //contoh dua
+        // selamatPagi('saskia');
+        // selamatSiang('stella');
+        // selamatMalam('syahirah');
+
+
+        let add = (function () {
+        let counter = 0;
+        return function () {
+            return ++counter;
+            }
+        })();
+
+        counter = 100;
+
+        console.log(add());
+        console.log(add());
+        console.log(add());
+        console.log(add());
+        console.log(add());
+
+    </script>
+</body>
+</html>

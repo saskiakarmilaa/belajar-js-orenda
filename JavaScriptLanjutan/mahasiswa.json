@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "saskia karmila",
+        "nrp": "12345678",
+        "email":"karmila456@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "stella wulandari",
+        "nrp": "0987654",
+        "email": "wulan456@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 2  
+    },
+    {
+        "nama": "syahirah inara",
+        "nrp": "56473829",
+        "email": "inara456@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 2 
+    }
+]

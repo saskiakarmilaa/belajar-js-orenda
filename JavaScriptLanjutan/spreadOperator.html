@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator</title>
+    <style>
+       body {
+        background-color: aquamarine;
+        text-align: center;
+       }
+       
+       .nama {
+        font-family: arial;
+        font-size: 30px;
+        color: aliceblue;
+       }
+
+       .nama span {
+        display: inline-block;
+        transition: .3s;
+        cursor: pointer;
+       }
+
+       .nama span:hover{
+        transform: scale(2);
+       }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>saskia</li>
+        <li>stella</li>
+        <li>syahirah</li>
+    </ul> -->
+
+    <h1 class="nama">saskiakarmilaa</h1>
+    <script>
+        //spread operator
+        //memecah iterables menjadi single element
+
+        // const mhs = ['saskia', 'stella','syahirah'];
+        // console.log(...mhs[0]);
+
+        //menggabungkan 2 array
+        // const mhs = ['saskia','stella','syahirah'];
+        // const dosen = ['ade','arip','deo'];
+        // const orang = [...mhs,...dosen];
+        // const orang = [...mhs, 'ajis' ,...dosen];
+        // console.log(orang);
+
+
+        //meng-copy array
+        // const mhs = ['saskia','stella','syahirah'];
+        // const mhs1 = mhs;
+        // const mhs1 = [...mhs]; 
+        // mhs1[0] = 'fajar'; 
+        // console.log(mhs);
+
+        // const liMhs = document.querySelectorAll('li');
+        // const mhs = [];
+        // for (let i = 0; i < liMhs.length; i++) {
+        //     mhs.push(liMhs[i].textContent);
+        // }
+        // console.log(mhs);
+        // const mhs = [...liMhs].mop(m => m.textContent);
+        // console.log(mhs);
+
+
+        const nama = document.querySelector('.nama');
+        const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('');
+        nama.innerHTML = huruf;
+
+    </script>
+</body>
+</html>

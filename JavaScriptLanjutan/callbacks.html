@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+    <script>
+        //callback
+        //synchronous callback
+        // function halo(nama) {
+        //     alert(`halo, ${nama}`);
+        // }
+
+        // function tampilkanPesan(callback) {
+        //     const nama = prompt('Masukan Nama : ');
+        //     callback(nama);
+        // }
+
+        // tampilkanPesan(nama => alert(`halo, ${nama}`));
+
+        // const mhs = [
+        //     {
+        //         "nama": "saskia karmila",
+        //         "nrp": "12345678",
+        //         "email":"karmila456@gmail.com",
+        //         "jurusan": "Teknik Informatika",
+        //         "idDosenWali": 1
+        //     },
+        //     {
+        //         "nama": "stella wulandari",
+        //         "nrp": "0987654",
+        //         "email": "wulan456@gmail.com",
+        //         "jurusan": "Teknik Informatika",
+        //         "idDosenWali": 2  
+        //     },
+        //     {
+        //         "nama": "syahirah inara",
+        //         "nrp": "56473829",
+        //         "email": "inara456@gmail.com",
+        //         "jurusan": "Teknik Informatika",
+        //         "idDosenWali": 2 
+        //     }
+        // ];
+        // console.log('mulai');
+        // mhs.forEach(m => {
+        //     for( let i = 0; i < 10000000; i++){
+        //         let date = new Date();
+        //     }
+        //     console.log(m.nama)});
+        // console.log('selesai');
+
+        // Asynchronous callback
+        // function getDataMahasiswa(url, success, error) {
+        //     let xhr = new XMLHttpRequest();
+
+        //     xhr.onreadystatechange = function () {
+        //         if(xhr.readyState === 4 ){
+        //             if (xhr.status === 200){
+        //                 success( xhr.response);
+        //             } else if (xhr.status === 404) {
+        //                 error();
+        //             }
+        //         }
+        //     }
+        //     xhr.open('get', url);
+        //     xhr.send();
+        // }
+
+        // console.log('mulai');
+        // getDataMahasiswa('mahasiswa.json', results =>{
+        //     const mhs = JSON.parse(results);
+        //     mhs.forEach(m => console.log(m.nama));
+        // },() => {
+
+        // });
+        // console.log('selesai');
+        
+
+        // JQuery
+        // console.log('mulai');
+        // $.ajax({
+        //     url: 'mahasiswa.json',
+        //     success: (mhs)=> {
+        //         mhs.forEach(m => console.log(m.nama));
+        //     },
+        //     error: (e) => {
+        //         console.log(e.responseText);
+        //     }
+        // });
+        // console.log('selesai');
+
+
+
+        //percobaan kedua
+        //asynchronous
+        // let stocks = {
+        //     Fruits: ["strawberry","grapes","banana","apple"],
+        //     liquid: ["water","ice"],
+        //     holder: ["cone","cup","stick"],
+        //     toppings: ["chocolate","peanuts"]
+        // };
+
+        // let order = (Fruit_name, call_production) => {
+        //     setTimeout(() => {
+        //         console.log(`${stocks.Fruits[Fruit_name]} was selected`);
+
+        //         call_production();
+
+        //     },  2000); 
+        // };
+
+        // let production = () => {
+        //     setTimeout(() => {
+        //         console.log("production has started");
+
+
+        //         setTimeout(()=>{
+        //             console.log("the fruit has been chopped");
+
+        //             setTimeout(()=>{
+        //                 console.log();
+        //                 (`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`)
+
+        //                 setTimeout(() => {
+        //                     console.log(`ice cream was placed on ${stocks.holder[0]}`);
+
+        //                     setTimeout(()=>{
+        //                         console.log(`${stocks.toppings[0]} was added as toppings`);
+
+        //                         setTimeout(()=> {
+        //                             console.log("serve ice cream");
+        //                         }, 2000)
+        //                     }, 3000);
+        //                 }, 2000);
+        //             },1000);
+        //         }, 2000);
+        //     }, 1000);
+        // };
+
+        // order(0, production);
+    </script>
+</body>
+</html>
